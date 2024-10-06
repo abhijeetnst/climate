@@ -9,10 +9,18 @@ body {
     line-height: 1.6;
 }
 
-header {
+/* header {
     background: #4CAF50;
     color: white;
     padding: 20px 0;
+    text-align: center;
+}
+ */
+
+header {
+    background: url('backdrop.webp') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
     text-align: center;
 }
 
