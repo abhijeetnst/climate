@@ -94,14 +94,14 @@ p {
     background-color: #f4f4f4;
 }
 
-.leaderboard {
+/*.leaderboard {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
 .leaderboard::-webkit-scrollbar {
     display: none;
-}
+}*/
 
 .leaderboard-item {
     padding: 10px;
