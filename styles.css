@@ -9,14 +9,6 @@ body {
     line-height: 1.6;
 }
 
-/* header {
-    background: #4CAF50;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
- */
-
 header {
     background: url('backdrop.webp') no-repeat center center/cover;
     color: white;
@@ -91,6 +83,36 @@ p {
     background: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
+}
+
+/* Leaderboard styles */
+.leaderboard {
+    height: 200px; /* Fixed height for the leaderboard */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 2px solid #4CAF50;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.leaderboard {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.leaderboard::-webkit-scrollbar {
+    display: none;
+}
+
+.leaderboard-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-item:nth-child(odd) {
+    background-color: #e0f7e4;
 }
 
 footer {
