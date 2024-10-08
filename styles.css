@@ -88,20 +88,21 @@ p {
 /* Leaderboard styles */
 .leaderboard {
     height: 200px; /* Fixed height for the leaderboard */
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: scroll; /* Enable vertical scrolling */
     border: 2px solid #4CAF50;
     padding: 10px;
     background-color: #f4f4f4;
 }
 
-/*.leaderboard {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.leaderboard::-webkit-scrollbar {
+    width: 0px; /* Make scrollbar width 0 */
 }
 
-.leaderboard::-webkit-scrollbar {
-    display: none;
-}*/
+/* Hide scrollbar for other browsers (Firefox) */
+.leaderboard {
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
 
 .leaderboard-item {
     padding: 10px;
@@ -114,6 +115,7 @@ p {
 .leaderboard-item:nth-child(odd) {
     background-color: #e0f7e4;
 }
+
 
 footer {
     background: #333;
